@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: radial-gradient(circle, #2a004f, #5d00b8);
+  color: #fff;
+}
+
+.stopwatch-container {
+  background: rgba(20, 20, 20, 0.9);
+  border-radius: 2vw;
+  padding: 4vh 3vw;
+  text-align: center;
+  box-shadow: 0 0 2vw #ff00ff;
+  width: 80vw; 
+  max-width: 900px; 
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.display {
+  font-size: 4.5vw; 
+  padding: 2vh;
+  text-shadow: 0 0 1vw #ff00ff;
+  border: 0.3vw solid #ff00ff;
+  border-radius: 1vw;
+  background: rgba(30, 0, 50, 0.7);
+  width: 95%; 
+  min-height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2.5vw;
+  margin-top: 3vh;
+  width: 90%;
+}
+
+button {
+  flex: 1;
+  padding: 2.5vh 3vw;
+  font-size: 1.8vw;
+  border: none;
+  border-radius: 1vw;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.2s;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+}
+
+.start-btn {
+  background: #4c00ff;
+  color: #fff;
+  box-shadow: 0 0 1vw #4c00ff;
+}
+
+.pause-btn {
+  background: #ff00ff;
+  color: #fff;
+  box-shadow: 0 0 1vw #ff00ff;
+}
+
+.reset-btn {
+  background: #00ffee;
+  color: #000;
+  box-shadow: 0 0 1vw #00ffee;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
