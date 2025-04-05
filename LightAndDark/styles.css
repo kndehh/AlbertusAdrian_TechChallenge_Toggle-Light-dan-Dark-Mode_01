@@ -1,0 +1,98 @@
+:root {
+    --base-color: white;
+    --base-variant: #e8e9ed;
+    --text-color: #111111;
+    --secondary-text: #3e3c40;
+    --primary-color: #323984;
+    --accent-color: #1360a9;
+}
+
+.darkmode {
+    --base-color: rgb(5, 5, 5);
+    --base-variant: #adbaed;
+    --text-color: #e3e3e3;
+    --secondary-text: #a1bce8;
+    --primary-color: #dc9ddb;
+    --accent-color: #c99cd8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--base-color);
+    color: var(--text-color);
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center; /* Buat h1 tetap di tengah */
+    transition: background-color 0.3s, color 0.3s;
+    padding: 2rem;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Ini penting buat vertical centering */
+    max-width: 500px;
+    width: 100%;
+    gap: 1.5rem;
+  }
+  
+
+  .container p {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.6;
+    max-width: 600px;
+    width: 100%;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+ 
+
+#ts {
+    height: 60px;
+    width: 60px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--base-variant);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: center;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+#ts svg {
+    width: 36px;
+    height: 36px;
+    display: block;
+    margin: auto;
+ }
+  
+
+#ts svg:last-child {
+    display: none;
+}
+
+.darkmode #ts svg:first-child {
+    display: none;
+}
+
+.darkmode #ts svg:last-child {
+    display: block;
+    transform: translateY(10px); 
+    transform: translateX(5px); 
+}
+  
